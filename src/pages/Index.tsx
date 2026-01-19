@@ -10,24 +10,135 @@ interface Username {
   name: string;
   category: string;
   description: string;
+  image: string;
+  wikipedia: string;
+  achievements: string[];
 }
 
 const usernames: Username[] = [
-  { id: 1, username: '@durov', name: 'Павел Дуров', category: 'Технологии', description: 'Основатель Telegram' },
-  { id: 2, username: '@varlamov', name: 'Илья Варламов', category: 'Блогеры', description: 'Урбанист, блогер' },
-  { id: 3, username: '@ksenia_sobchak', name: 'Ксения Собчак', category: 'Медиа', description: 'Журналист, телеведущая' },
-  { id: 4, username: '@eminem', name: 'Eminem', category: 'Музыка', description: 'Рэп-исполнитель' },
-  { id: 5, username: '@cristiano', name: 'Криштиану Роналду', category: 'Спорт', description: 'Футболист' },
-  { id: 6, username: '@elonmusk', name: 'Илон Маск', category: 'Технологии', description: 'CEO Tesla & SpaceX' },
-  { id: 7, username: '@khabib_nurmagomedov', name: 'Хабиб Нурмагомедов', category: 'Спорт', description: 'Боец UFC' },
-  { id: 8, username: '@zemfira', name: 'Земфира', category: 'Музыка', description: 'Рок-певица' },
-  { id: 9, username: '@yurydud', name: 'Юрий Дудь', category: 'Блогеры', description: 'Журналист, видеоблогер' },
-  { id: 10, username: '@timatiofficial', name: 'Тимати', category: 'Музыка', description: 'Рэп-исполнитель' },
-  { id: 11, username: '@natgeo', name: 'National Geographic', category: 'Медиа', description: 'Научно-популярный журнал' },
-  { id: 12, username: '@wylsacom', name: 'Валентин Петухов', category: 'Технологии', description: 'Технологический блогер' },
+  {
+    id: 1,
+    username: '@MartinaNavratilova',
+    name: 'Мартина Навратилова',
+    category: 'Спорт',
+    description: 'Легендарная теннисистка',
+    image: 'https://cdn.poehali.dev/projects/577b69ef-cbe8-40c5-96ae-e907b1266064/files/33496069-ef50-4eb0-bdad-81dc03dba87a.jpg',
+    wikipedia: 'https://en.wikipedia.org/wiki/Martina_Navratilova',
+    achievements: [
+      '18 титулов Большого шлема в одиночном разряде',
+      '31 титул Большого шлема в женском парном разряде',
+      '10 титулов смешанного парного разряда',
+      'Активистка за права ЛГБТ-сообщества'
+    ]
+  },
+  {
+    id: 2,
+    username: '@AlOerter',
+    name: 'Эл Эртер',
+    category: 'Спорт',
+    description: 'Легенда легкой атлетики',
+    image: 'https://cdn.poehali.dev/projects/577b69ef-cbe8-40c5-96ae-e907b1266064/files/8f48d1c5-b14b-46e0-95d0-596f4bc4ec24.jpg',
+    wikipedia: 'https://en.wikipedia.org/wiki/Al_Oerter',
+    achievements: [
+      'Четырехкратный олимпийский чемпион по метанию диска',
+      'Победитель на четырех Олимпиадах подряд (1956-1968)',
+      'Единственный спортсмен с такими результатами в метании диска',
+      'Установил олимпийские рекорды четыре раза'
+    ]
+  },
+  {
+    id: 3,
+    username: '@FannyBlankersKoen',
+    name: 'Фанни Бланкерс-Кун',
+    category: 'Спорт',
+    description: 'Летающая домохозяйка',
+    image: 'https://cdn.poehali.dev/projects/577b69ef-cbe8-40c5-96ae-e907b1266064/files/dc049f31-92be-4562-b42a-a871d21cfb68.jpg',
+    wikipedia: 'https://en.wikipedia.org/wiki/Fanny_Blankers-Koen',
+    achievements: [
+      'Четыре золотые медали на Олимпиаде 1948 года',
+      'Первая женщина, выигравшая четыре золотые медали на одной Олимпиаде',
+      'Мировые рекорды в беге и прыжках',
+      'Мать двоих детей во время олимпийской победы'
+    ]
+  },
+  {
+    id: 4,
+    username: '@DorothyDandridge',
+    name: 'Дороти Дэндридж',
+    category: 'Кино',
+    description: 'Голливудская актриса-первопроходец',
+    image: 'https://cdn.poehali.dev/projects/577b69ef-cbe8-40c5-96ae-e907b1266064/files/ea98852d-2f0b-4210-976b-686feae19192.jpg',
+    wikipedia: 'https://en.wikipedia.org/wiki/Dorothy_Dandridge',
+    achievements: [
+      'Первая афроамериканка, номинированная на Оскар как лучшая актриса (1955)',
+      'Звезда фильма "Кармен Джонс"',
+      'Пионер в борьбе за права чернокожих актеров в Голливуде',
+      'Икона стиля и красоты 1950-х годов'
+    ]
+  },
+  {
+    id: 5,
+    username: '@RosalindFranklin',
+    name: 'Розалинд Франклин',
+    category: 'Наука',
+    description: 'Первооткрывательница структуры ДНК',
+    image: 'https://cdn.poehali.dev/projects/577b69ef-cbe8-40c5-96ae-e907b1266064/files/c45d546b-b66c-4542-8ba4-529990baefa4.jpg',
+    wikipedia: 'https://en.wikipedia.org/wiki/Rosalind_Franklin',
+    achievements: [
+      'Создала знаменитую "Фотографию 51" структуры ДНК',
+      'Ключевой вклад в открытие двойной спирали ДНК',
+      'Пионер рентгеновской кристаллографии',
+      'Важные исследования структуры вирусов'
+    ]
+  },
+  {
+    id: 6,
+    username: '@BabeZaharias',
+    name: 'Бейб Дидриксон Захариас',
+    category: 'Спорт',
+    description: 'Величайшая спортсменка XX века',
+    image: 'https://cdn.poehali.dev/projects/577b69ef-cbe8-40c5-96ae-e907b1266064/files/16521320-e478-4319-8a61-6e812f142cfc.jpg',
+    wikipedia: 'https://en.wikipedia.org/wiki/Babe_Didrikson_Zaharias',
+    achievements: [
+      'Две золотые и одна серебряная медали на Олимпиаде 1932',
+      '10 титулов LPGA в гольфе',
+      'Успех в баскетболе, бейсболе и легкой атлетике',
+      'Признана величайшей спортсменкой первой половины XX века'
+    ]
+  },
+  {
+    id: 7,
+    username: '@GordonParks',
+    name: 'Гордон Паркс',
+    category: 'Искусство',
+    description: 'Легендарный фотограф и режиссер',
+    image: 'https://cdn.poehali.dev/projects/577b69ef-cbe8-40c5-96ae-e907b1266064/files/97a6693f-b51c-4049-9678-3bbb0e6562af.jpg',
+    wikipedia: 'https://en.wikipedia.org/wiki/Gordon_Parks',
+    achievements: [
+      'Первый афроамериканский фотограф в Life Magazine',
+      'Режиссер культового фильма "Шафт" (1971)',
+      'Документалист движения за гражданские права',
+      'Автор, композитор и активист за социальную справедливость'
+    ]
+  },
+  {
+    id: 8,
+    username: '@LindaCarrollHamilton',
+    name: 'Линда Кэрролл Хэмилтон',
+    category: 'Наука',
+    description: 'Ученая-новатор в биохимии',
+    image: 'https://cdn.poehali.dev/projects/577b69ef-cbe8-40c5-96ae-e907b1266064/files/865fc733-458b-4b84-8a7f-31053a545fc7.jpg',
+    wikipedia: 'https://en.wikipedia.org/wiki/Linda_Carroll_Hamilton',
+    achievements: [
+      'Пионер исследований в области биохимии',
+      'Важный вклад в понимание метаболизма клеток',
+      'Наставник для молодых ученых-женщин',
+      'Активистка за равенство в научном сообществе'
+    ]
+  },
 ];
 
-const categories = ['Все', 'Технологии', 'Блогеры', 'Медиа', 'Музыка', 'Спорт'];
+const categories = ['Все', 'Спорт', 'Кино', 'Наука', 'Искусство'];
 
 export default function Index() {
   const [selectedCategory, setSelectedCategory] = useState('Все');
@@ -113,37 +224,70 @@ export default function Index() {
 
       {/* Gallery Grid */}
       <section className="container mx-auto px-4 pb-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-8">
           {filteredUsernames.map((user, index) => (
             <Card 
               key={user.id} 
-              className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-1 animate-fade-in cursor-pointer"
+              className="group hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 animate-fade-in overflow-hidden"
               style={{ animationDelay: `${index * 50}ms` }}
-              onClick={() => window.open(`https://t.me/${user.username.replace('@', '')}`, '_blank')}
             >
-              <CardContent className="p-6 space-y-4">
-                <div className="flex items-start justify-between">
-                  <div className="space-y-1 flex-1">
-                    <div className="flex items-center gap-2">
-                      <Icon name="AtSign" size={20} className="text-primary" />
-                      <h3 className="font-bold text-xl group-hover:text-primary transition-colors">
-                        {user.username}
-                      </h3>
-                    </div>
-                    <p className="text-sm font-medium text-foreground">{user.name}</p>
-                  </div>
-                  <Icon 
-                    name="ExternalLink" 
-                    size={18} 
-                    className="text-muted-foreground group-hover:text-primary transition-colors"
-                  />
-                </div>
-                
-                <p className="text-sm text-muted-foreground">{user.description}</p>
-                
-                <Badge variant="secondary" className="w-fit">
+              <div className="relative h-80 overflow-hidden">
+                <img 
+                  src={user.image} 
+                  alt={user.name}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                <Badge 
+                  variant="secondary" 
+                  className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm"
+                >
                   {user.category}
                 </Badge>
+              </div>
+              
+              <CardContent className="p-8 space-y-6">
+                <div className="space-y-3">
+                  <div className="flex items-center gap-2">
+                    <Icon name="AtSign" size={24} className="text-primary" />
+                    <h3 className="font-bold text-2xl group-hover:text-primary transition-colors">
+                      {user.username}
+                    </h3>
+                  </div>
+                  <h4 className="text-xl font-semibold text-foreground">{user.name}</h4>
+                  <p className="text-base text-muted-foreground">{user.description}</p>
+                </div>
+
+                <div className="space-y-3">
+                  <h5 className="font-semibold text-sm uppercase tracking-wide text-primary">Достижения:</h5>
+                  <ul className="space-y-2">
+                    {user.achievements.map((achievement, idx) => (
+                      <li key={idx} className="flex items-start gap-2 text-sm text-muted-foreground">
+                        <Icon name="Award" size={16} className="text-primary mt-0.5 flex-shrink-0" />
+                        <span>{achievement}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                <div className="flex gap-3 pt-4 border-t">
+                  <Button 
+                    variant="default" 
+                    className="flex-1 gap-2"
+                    onClick={() => window.open(`https://t.me/${user.username.replace('@', '')}`, '_blank')}
+                  >
+                    <Icon name="Send" size={18} />
+                    Telegram
+                  </Button>
+                  <Button 
+                    variant="outline" 
+                    className="flex-1 gap-2"
+                    onClick={() => window.open(user.wikipedia, '_blank')}
+                  >
+                    <Icon name="BookOpen" size={18} />
+                    Википедия
+                  </Button>
+                </div>
               </CardContent>
             </Card>
           ))}
