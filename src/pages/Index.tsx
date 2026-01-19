@@ -25,6 +25,7 @@ const usernames: Username[] = [
     image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Martina_Navratilova_2015.jpg/800px-Martina_Navratilova_2015.jpg',
     wikipedia: 'https://en.wikipedia.org/wiki/Martina_Navratilova',
     achievements: [
+      'Первая ракетка мира',
       '18 титулов Большого шлема в одиночном разряде',
       '31 титул Большого шлема в женском парном разряде',
       '10 титулов смешанного парного разряда',
@@ -149,7 +150,7 @@ export default function Index() {
     : usernames.filter(u => u.category === selectedCategory);
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white to-muted/20">
+    <div className="min-h-screen bg-gradient-to-b from-[#5a6b4f] to-[#3d4a36]">
       {/* Header */}
       <header className="border-b bg-white/80 backdrop-blur-sm sticky top-0 z-10">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
@@ -172,20 +173,16 @@ export default function Index() {
             <div className="max-w-2xl mx-auto text-center space-y-4">
               <h2 className="text-2xl font-bold">Свяжитесь с нами</h2>
               <p className="text-muted-foreground">
-                Хотите добавить свой юзернейм в галерею? Напишите нам!
+                Хотите приобрести один из юзернеймов или всю галерею? Просто сделайте предложение и это будет отличная сделка.
               </p>
               <div className="flex flex-wrap gap-4 justify-center">
-                <Button variant="outline" className="gap-2">
+                <Button 
+                  variant="default" 
+                  className="gap-2"
+                  onClick={() => window.open('https://t.me/Adkitten', '_blank')}
+                >
                   <Icon name="Send" size={18} />
-                  Telegram
-                </Button>
-                <Button variant="outline" className="gap-2">
-                  <Icon name="Mail" size={18} />
-                  Email
-                </Button>
-                <Button variant="outline" className="gap-2">
-                  <Icon name="MessageCircle" size={18} />
-                  Обратная связь
+                  Связаться
                 </Button>
               </div>
             </div>
