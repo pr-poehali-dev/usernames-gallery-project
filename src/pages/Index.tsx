@@ -56,7 +56,7 @@ const usernames: Username[] = [
     category: 'Спорт',
     statusLine: 'Летающая домохозяйка, изменившая мир',
     narrative: 'Мать двоих детей. Тридцать лет. Четыре золотых медали на одной Олимпиаде. Фанни разрушила миф о том, что материнство несовместимо с профессиональным спортом. В 1948 году она стала символом нового времени — сильной, независимой, непобедимой. Её имя — это вызов предрассудкам и доказательство того, что женщины могут быть абсолютно всем.',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Fanny_Blankers-Koen_1948.jpg/800px-Fanny_Blankers-Koen_1948.jpg',
+    image: 'https://cdn.poehali.dev/files/180426095255-fanny-blankers-koen-athlete-of-the-century-trophy.jpg',
     wikipedia: 'https://en.wikipedia.org/wiki/Fanny_Blankers-Koen',
     keyLegacy: [
       '4 золотые медали на Олимпиаде-1948',
