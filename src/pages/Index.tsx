@@ -22,7 +22,7 @@ const usernames: Username[] = [
     name: 'Мартина Навратилова',
     category: 'Спорт',
     description: 'Легендарная теннисистка',
-    image: 'https://cdn.poehali.dev/projects/577b69ef-cbe8-40c5-96ae-e907b1266064/files/33496069-ef50-4eb0-bdad-81dc03dba87a.jpg',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Martina_Navratilova_2015.jpg/800px-Martina_Navratilova_2015.jpg',
     wikipedia: 'https://en.wikipedia.org/wiki/Martina_Navratilova',
     achievements: [
       '18 титулов Большого шлема в одиночном разряде',
@@ -37,7 +37,7 @@ const usernames: Username[] = [
     name: 'Эл Эртер',
     category: 'Спорт',
     description: 'Легенда легкой атлетики',
-    image: 'https://cdn.poehali.dev/projects/577b69ef-cbe8-40c5-96ae-e907b1266064/files/8f48d1c5-b14b-46e0-95d0-596f4bc4ec24.jpg',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Al_Oerter_1968.jpg/800px-Al_Oerter_1968.jpg',
     wikipedia: 'https://en.wikipedia.org/wiki/Al_Oerter',
     achievements: [
       'Четырехкратный олимпийский чемпион по метанию диска',
@@ -52,7 +52,7 @@ const usernames: Username[] = [
     name: 'Фанни Бланкерс-Кун',
     category: 'Спорт',
     description: 'Летающая домохозяйка',
-    image: 'https://cdn.poehali.dev/projects/577b69ef-cbe8-40c5-96ae-e907b1266064/files/dc049f31-92be-4562-b42a-a871d21cfb68.jpg',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Fanny_Blankers-Koen_1948.jpg/800px-Fanny_Blankers-Koen_1948.jpg',
     wikipedia: 'https://en.wikipedia.org/wiki/Fanny_Blankers-Koen',
     achievements: [
       'Четыре золотые медали на Олимпиаде 1948 года',
@@ -67,7 +67,7 @@ const usernames: Username[] = [
     name: 'Дороти Дэндридж',
     category: 'Кино',
     description: 'Голливудская актриса-первопроходец',
-    image: 'https://cdn.poehali.dev/projects/577b69ef-cbe8-40c5-96ae-e907b1266064/files/ea98852d-2f0b-4210-976b-686feae19192.jpg',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Dorothy_Dandridge_-_publicity.jpg/800px-Dorothy_Dandridge_-_publicity.jpg',
     wikipedia: 'https://en.wikipedia.org/wiki/Dorothy_Dandridge',
     achievements: [
       'Первая афроамериканка, номинированная на Оскар как лучшая актриса (1955)',
@@ -82,7 +82,7 @@ const usernames: Username[] = [
     name: 'Розалинд Франклин',
     category: 'Наука',
     description: 'Первооткрывательница структуры ДНК',
-    image: 'https://cdn.poehali.dev/projects/577b69ef-cbe8-40c5-96ae-e907b1266064/files/c45d546b-b66c-4542-8ba4-529990baefa4.jpg',
+    image: 'https://upload.wikimedia.org/wikipedia/en/thumb/1/11/Rosalind_Franklin.jpg/800px-Rosalind_Franklin.jpg',
     wikipedia: 'https://en.wikipedia.org/wiki/Rosalind_Franklin',
     achievements: [
       'Создала знаменитую "Фотографию 51" структуры ДНК',
@@ -97,7 +97,7 @@ const usernames: Username[] = [
     name: 'Бейб Дидриксон Захариас',
     category: 'Спорт',
     description: 'Величайшая спортсменка XX века',
-    image: 'https://cdn.poehali.dev/projects/577b69ef-cbe8-40c5-96ae-e907b1266064/files/16521320-e478-4319-8a61-6e812f142cfc.jpg',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Babe_Didrikson_1932.jpg/800px-Babe_Didrikson_1932.jpg',
     wikipedia: 'https://en.wikipedia.org/wiki/Babe_Didrikson_Zaharias',
     achievements: [
       'Две золотые и одна серебряная медали на Олимпиаде 1932',
@@ -112,7 +112,7 @@ const usernames: Username[] = [
     name: 'Гордон Паркс',
     category: 'Искусство',
     description: 'Легендарный фотограф и режиссер',
-    image: 'https://cdn.poehali.dev/projects/577b69ef-cbe8-40c5-96ae-e907b1266064/files/97a6693f-b51c-4049-9678-3bbb0e6562af.jpg',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Gordon_Parks_NYWTS.jpg/800px-Gordon_Parks_NYWTS.jpg',
     wikipedia: 'https://en.wikipedia.org/wiki/Gordon_Parks',
     achievements: [
       'Первый афроамериканский фотограф в Life Magazine',
@@ -127,7 +127,7 @@ const usernames: Username[] = [
     name: 'Линда Кэрролл Хэмилтон',
     category: 'Наука',
     description: 'Ученая-новатор в биохимии',
-    image: 'https://cdn.poehali.dev/projects/577b69ef-cbe8-40c5-96ae-e907b1266064/files/865fc733-458b-4b84-8a7f-31053a545fc7.jpg',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Linda_B_Buck_in_2009.jpg/800px-Linda_B_Buck_in_2009.jpg',
     wikipedia: 'https://en.wikipedia.org/wiki/Linda_Carroll_Hamilton',
     achievements: [
       'Пионер исследований в области биохимии',
