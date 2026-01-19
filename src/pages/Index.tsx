@@ -7,6 +7,7 @@ import Icon from '@/components/ui/icon';
 interface Username {
   id: number;
   username: string;
+  alternativeUsername?: string;
   name: string;
   category: string;
   statusLine: string;
@@ -100,7 +101,8 @@ const usernames: Username[] = [
   {
     id: 6,
     username: '@BabeZaharias',
-    name: 'Бейб Дидриксон Захариас (@MildredDidrikson)',
+    alternativeUsername: '@MildredDidrikson',
+    name: 'Бейб Дидриксон Захариас',
     category: 'Спорт',
     statusLine: 'Величайшая универсальная спортсменка столетия',
     narrative: 'Лёгкая атлетика. Баскетбол. Бейсбол. Гольф. Бейб Захариас не просто побеждала — она доминировала во всех видах спорта, к которым прикасалась. Две олимпийские золотые медали, десять титулов LPGA и бесконечное количество рекордов. Её имя — синоним слова «универсальность». Это не просто спортсменка. Это легенда XX века.',
@@ -261,18 +263,37 @@ export default function Index() {
                   {/* Content Section */}
                   <div className="p-8 space-y-6 flex-1 flex flex-col">
                     {/* Username - главный актив */}
-                    <div className="relative text-center py-4 border-y border-border overflow-hidden group/username">
-                      <div className="absolute inset-0 animate-shimmer opacity-0 group-hover/username:opacity-100 transition-opacity duration-500"></div>
-                      <a
-                        href={`https://t.me/${user.username.replace('@', '')}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="relative block"
-                      >
-                        <p className="text-4xl font-bold font-mono text-primary tracking-tight transition-all duration-300 group-hover/username:scale-105">
-                          {user.username}
-                        </p>
-                      </a>
+                    <div className="relative text-center py-4 border-y border-border overflow-hidden">
+                      <div className="space-y-3">
+                        <div className="group/username relative">
+                          <div className="absolute inset-0 animate-shimmer opacity-0 group-hover/username:opacity-100 transition-opacity duration-500"></div>
+                          <a
+                            href={`https://t.me/${user.username.replace('@', '')}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="relative block"
+                          >
+                            <p className="text-4xl font-bold font-mono text-primary tracking-tight transition-all duration-300 group-hover/username:scale-105">
+                              {user.username}
+                            </p>
+                          </a>
+                        </div>
+                        {user.alternativeUsername && (
+                          <div className="group/alt relative">
+                            <div className="absolute inset-0 animate-shimmer opacity-0 group-hover/alt:opacity-100 transition-opacity duration-500"></div>
+                            <a
+                              href={`https://t.me/${user.alternativeUsername.replace('@', '')}`}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="relative block"
+                            >
+                              <p className="text-2xl font-bold font-mono text-secondary tracking-tight transition-all duration-300 group-hover/alt:scale-105">
+                                {user.alternativeUsername}
+                              </p>
+                            </a>
+                          </div>
+                        )}
+                      </div>
                     </div>
 
                     {/* Name & Status */}
@@ -308,25 +329,38 @@ export default function Index() {
                     </div>
 
                     {/* Actions */}
-                    <div className="pt-6 border-t border-border flex gap-3">
-                      <Button
-                        variant="outline"
-                        size="sm"
-                        className="flex-1 gap-2 group/btn"
-                        onClick={() => window.open(`https://t.me/${user.username.replace('@', '')}`, '_blank')}
-                      >
-                        <Icon name="Send" size={16} className="transition-transform group-hover/btn:translate-x-0.5" />
-                        <span>Telegram</span>
-                      </Button>
-                      <Button
-                        variant="outline"
-                        size="sm"
-                        className="flex-1 gap-2 group/btn"
-                        onClick={() => window.open(user.wikipedia, '_blank')}
-                      >
-                        <Icon name="BookOpen" size={16} className="transition-transform group-hover/btn:scale-110" />
-                        <span>Wikipedia</span>
-                      </Button>
+                    <div className="pt-6 border-t border-border">
+                      <div className="flex gap-3 mb-3">
+                        <Button
+                          variant="outline"
+                          size="sm"
+                          className="flex-1 gap-2 group/btn"
+                          onClick={() => window.open(`https://t.me/${user.username.replace('@', '')}`, '_blank')}
+                        >
+                          <Icon name="Send" size={16} className="transition-transform group-hover/btn:translate-x-0.5" />
+                          <span>Telegram</span>
+                        </Button>
+                        <Button
+                          variant="outline"
+                          size="sm"
+                          className="flex-1 gap-2 group/btn"
+                          onClick={() => window.open(user.wikipedia, '_blank')}
+                        >
+                          <Icon name="BookOpen" size={16} className="transition-transform group-hover/btn:scale-110" />
+                          <span>Wikipedia</span>
+                        </Button>
+                      </div>
+                      {user.alternativeUsername && (
+                        <Button
+                          variant="outline"
+                          size="sm"
+                          className="w-full gap-2 group/btn"
+                          onClick={() => window.open(`https://t.me/${user.alternativeUsername.replace('@', '')}`, '_blank')}
+                        >
+                          <Icon name="Send" size={16} className="transition-transform group-hover/btn:translate-x-0.5" />
+                          <span>{user.alternativeUsername}</span>
+                        </Button>
+                      )}
                     </div>
                   </div>
                 </CardContent>
