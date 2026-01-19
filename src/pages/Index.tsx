@@ -40,7 +40,7 @@ const usernames: Username[] = [
     category: 'Спорт',
     statusLine: 'Эталон олимпийского совершенства',
     narrative: 'Четыре Олимпиады подряд. Четыре золотые медали в метании диска. Никто в истории лёгкой атлетики не повторил эту серию побед. Эртер — это имя, вписанное в олимпийскую легенду золотыми буквами. Это не просто спортсмен — это эталон постоянства, силы воли и безупречной техники на протяжении двенадцати лет.',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Al_Oerter_1968.jpg/800px-Al_Oerter_1968.jpg',
+    image: 'https://cdn.poehali.dev/files/149019842_4709286_Al_Oerter_1495190480_95047.jpg',
     wikipedia: 'https://en.wikipedia.org/wiki/Al_Oerter',
     keyLegacy: [
       'Четырёхкратный олимпийский чемпион',
