@@ -9,10 +9,11 @@ interface Username {
   username: string;
   name: string;
   category: string;
-  description: string;
+  statusLine: string;
+  narrative: string;
   image: string;
   wikipedia: string;
-  achievements: string[];
+  keyLegacy: string[];
 }
 
 const usernames: Username[] = [
@@ -21,14 +22,14 @@ const usernames: Username[] = [
     username: '@MartinaNavratilova',
     name: 'Мартина Навратилова',
     category: 'Спорт',
-    description: 'Легендарная теннисистка',
+    statusLine: 'Символ абсолютного доминирования',
+    narrative: 'Имя Навратиловой — это эпоха. Восемнадцать титулов Большого шлема в одиночном разряде, 167 недель на вершине мирового рейтинга, и абсолютное господство в женском теннисе конца XX века. Но это не просто цифры — это история о женщине, которая изменила правила игры, разрушила стереотипы и стала голосом целого поколения. Владение этим юзернеймом — это владение частью спортивной легенды, которая живёт вне времени.',
     image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Martina_Navratilova_2015.jpg/800px-Martina_Navratilova_2015.jpg',
     wikipedia: 'https://en.wikipedia.org/wiki/Martina_Navratilova',
-    achievements: [
-      'Первая ракетка мира',
-      '18 титулов Большого шлема в одиночном разряде',
-      '31 титул Большого шлема в женском парном разряде',
-      '10 титулов смешанного парного разряда',
+    keyLegacy: [
+      '167 недель первой ракеткой мира',
+      '18 побед на турнирах Большого шлема (одиночки)',
+      '59 титулов Grand Slam (все категории)',
       'Активистка за права ЛГБТ-сообщества'
     ]
   },
@@ -37,14 +38,15 @@ const usernames: Username[] = [
     username: '@AlOerter',
     name: 'Эл Эртер',
     category: 'Спорт',
-    description: 'Легенда легкой атлетики',
+    statusLine: 'Эталон олимпийского совершенства',
+    narrative: 'Четыре Олимпиады подряд. Четыре золотые медали в метании диска. Никто в истории лёгкой атлетики не повторил эту серию побед. Эртер — это имя, вписанное в олимпийскую легенду золотыми буквами. Это не просто спортсмен — это эталон постоянства, силы воли и безупречной техники на протяжении двенадцати лет.',
     image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Al_Oerter_1968.jpg/800px-Al_Oerter_1968.jpg',
     wikipedia: 'https://en.wikipedia.org/wiki/Al_Oerter',
-    achievements: [
-      'Четырехкратный олимпийский чемпион по метанию диска',
-      'Победитель на четырех Олимпиадах подряд (1956-1968)',
-      'Единственный спортсмен с такими результатами в метании диска',
-      'Установил олимпийские рекорды четыре раза'
+    keyLegacy: [
+      'Четырёхкратный олимпийский чемпион',
+      'Победы на Играх 1956–1968',
+      'Единственный в истории атлетики с такими результатами',
+      'Четыре олимпийских рекорда'
     ]
   },
   {
@@ -52,14 +54,15 @@ const usernames: Username[] = [
     username: '@FannyBlankersKoen',
     name: 'Фанни Бланкерс-Кун',
     category: 'Спорт',
-    description: 'Летающая домохозяйка',
+    statusLine: 'Летающая домохозяйка, изменившая мир',
+    narrative: 'Мать двоих детей. Тридцать лет. Четыре золотых медали на одной Олимпиаде. Фанни разрушила миф о том, что материнство несовместимо с профессиональным спортом. В 1948 году она стала символом нового времени — сильной, независимой, непобедимой. Её имя — это вызов предрассудкам и доказательство того, что женщины могут быть абсолютно всем.',
     image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Fanny_Blankers-Koen_1948.jpg/800px-Fanny_Blankers-Koen_1948.jpg',
     wikipedia: 'https://en.wikipedia.org/wiki/Fanny_Blankers-Koen',
-    achievements: [
-      'Четыре золотые медали на Олимпиаде 1948 года',
-      'Первая женщина, выигравшая четыре золотые медали на одной Олимпиаде',
+    keyLegacy: [
+      '4 золотые медали на Олимпиаде-1948',
+      'Первая женщина с четырьмя победами на одних Играх',
       'Мировые рекорды в беге и прыжках',
-      'Мать двоих детей во время олимпийской победы'
+      'Разрушила стереотипы о женщинах в спорте'
     ]
   },
   {
@@ -67,14 +70,15 @@ const usernames: Username[] = [
     username: '@DorothyDandridge',
     name: 'Дороти Дэндридж',
     category: 'Кино',
-    description: 'Голливудская актриса-первопроходец',
+    statusLine: 'Первая звезда, разрушившая расовые барьеры',
+    narrative: 'Голливуд 1950-х был местом, где цвет кожи определял твою судьбу. Дороти Дэндридж стала первой афроамериканкой, номинированной на «Оскар» за лучшую женскую роль. Её красота, талант и сила воли открыли дверь целому поколению чернокожих актёров. Имя Дэндридж — это история о мужестве, несломленной воле и первопроходческом духе.',
     image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Dorothy_Dandridge_-_publicity.jpg/800px-Dorothy_Dandridge_-_publicity.jpg',
     wikipedia: 'https://en.wikipedia.org/wiki/Dorothy_Dandridge',
-    achievements: [
-      'Первая афроамериканка, номинированная на Оскар как лучшая актриса (1955)',
-      'Звезда фильма "Кармен Джонс"',
-      'Пионер в борьбе за права чернокожих актеров в Голливуде',
-      'Икона стиля и красоты 1950-х годов'
+    keyLegacy: [
+      'Первая афроамериканка в номинации «Оскар» (1955)',
+      'Звезда фильма «Кармен Джонс»',
+      'Пионер борьбы за права чернокожих в Голливуде',
+      'Икона стиля и элегантности 1950-х'
     ]
   },
   {
@@ -82,14 +86,15 @@ const usernames: Username[] = [
     username: '@RosalindFranklin',
     name: 'Розалинд Франклин',
     category: 'Наука',
-    description: 'Первооткрывательница структуры ДНК',
+    statusLine: 'Скрытый архитектор ДНК',
+    narrative: 'Её работа открыла секрет жизни. Знаменитая «Фотография 51» — рентгеновский снимок структуры ДНК — стала ключом к одному из величайших научных открытий XX века. Но история не сохранила её имя так, как следовало бы. Розалинд Франклин — это имя, которое должно быть в каждом учебнике биологии. Владение её юзернеймом — это акт справедливости.',
     image: 'https://upload.wikimedia.org/wikipedia/en/thumb/1/11/Rosalind_Franklin.jpg/800px-Rosalind_Franklin.jpg',
     wikipedia: 'https://en.wikipedia.org/wiki/Rosalind_Franklin',
-    achievements: [
-      'Создала знаменитую "Фотографию 51" структуры ДНК',
-      'Ключевой вклад в открытие двойной спирали ДНК',
+    keyLegacy: [
+      'Автор «Фотографии 51» структуры ДНК',
+      'Ключевой вклад в открытие двойной спирали',
       'Пионер рентгеновской кристаллографии',
-      'Важные исследования структуры вирусов'
+      'Исследования структуры вирусов'
     ]
   },
   {
@@ -97,13 +102,14 @@ const usernames: Username[] = [
     username: '@BabeZaharias',
     name: 'Бейб Дидриксон Захариас',
     category: 'Спорт',
-    description: 'Величайшая спортсменка XX века',
+    statusLine: 'Величайшая универсальная спортсменка столетия',
+    narrative: 'Лёгкая атлетика. Баскетбол. Бейсбол. Гольф. Бейб Захариас не просто побеждала — она доминировала во всех видах спорта, к которым прикасалась. Две олимпийские золотые медали, десять титулов LPGA и бесконечное количество рекордов. Её имя — синоним слова «универсальность». Это не просто спортсменка. Это легенда XX века.',
     image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Babe_Didrikson_1932.jpg/800px-Babe_Didrikson_1932.jpg',
     wikipedia: 'https://en.wikipedia.org/wiki/Babe_Didrikson_Zaharias',
-    achievements: [
-      'Две золотые и одна серебряная медали на Олимпиаде 1932',
+    keyLegacy: [
+      '2 золотые и серебряная медали на Олимпиаде-1932',
       '10 титулов LPGA в гольфе',
-      'Успех в баскетболе, бейсболе и легкой атлетике',
+      'Успех в баскетболе, бейсболе и лёгкой атлетике',
       'Признана величайшей спортсменкой первой половины XX века'
     ]
   },
@@ -112,14 +118,15 @@ const usernames: Username[] = [
     username: '@GordonParks',
     name: 'Гордон Паркс',
     category: 'Искусство',
-    description: 'Легендарный фотограф и режиссер',
+    statusLine: 'Визуальный летописец эпохи перемен',
+    narrative: 'Камера Гордона Паркса запечатлела историю целой эпохи. Первый афроамериканский фотограф Life Magazine, режиссёр культового фильма «Шафт», документалист движения за гражданские права — это человек, который использовал искусство как оружие против несправедливости. Его снимки изменили восприятие расовых проблем в Америке. Имя Паркса — это часть визуального наследия человечества.',
     image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Gordon_Parks_NYWTS.jpg/800px-Gordon_Parks_NYWTS.jpg',
     wikipedia: 'https://en.wikipedia.org/wiki/Gordon_Parks',
-    achievements: [
-      'Первый афроамериканский фотограф в Life Magazine',
-      'Режиссер культового фильма "Шафт" (1971)',
+    keyLegacy: [
+      'Первый афроамериканский фотограф Life Magazine',
+      'Режиссёр культового фильма «Шафт» (1971)',
       'Документалист движения за гражданские права',
-      'Автор, композитор и активист за социальную справедливость'
+      'Автор, композитор и активист'
     ]
   },
   {
@@ -127,14 +134,15 @@ const usernames: Username[] = [
     username: '@LindaCarrollHamilton',
     name: 'Линда Кэрролл Хэмилтон',
     category: 'Наука',
-    description: 'Ученая-новатор в биохимии',
+    statusLine: 'Пионер биохимии и наставник поколений',
+    narrative: 'Путь женщины в науке XX века был полон барьеров. Линда Кэрролл Хэмилтон преодолела их все. Её исследования в области метаболизма клеток открыли новые горизонты для биохимии, а её наставническая работа вдохновила целое поколение женщин-учёных. Имя Хэмилтон — это символ пути, прокладываемого для тех, кто придёт после.',
     image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Linda_B_Buck_in_2009.jpg/800px-Linda_B_Buck_in_2009.jpg',
     wikipedia: 'https://en.wikipedia.org/wiki/Linda_Carroll_Hamilton',
-    achievements: [
-      'Пионер исследований в области биохимии',
-      'Важный вклад в понимание метаболизма клеток',
-      'Наставник для молодых ученых-женщин',
-      'Активистка за равенство в научном сообществе'
+    keyLegacy: [
+      'Пионер исследований метаболизма клеток',
+      'Прорывной вклад в понимание биохимии',
+      'Наставник молодых учёных-женщин',
+      'Активистка за равенство в науке'
     ]
   },
 ];
@@ -143,147 +151,136 @@ const categories = ['Все', 'Спорт', 'Кино', 'Наука', 'Иску�
 
 export default function Index() {
   const [selectedCategory, setSelectedCategory] = useState('Все');
-  const [showContacts, setShowContacts] = useState(false);
 
   const filteredUsernames = selectedCategory === 'Все' 
     ? usernames 
     : usernames.filter(u => u.category === selectedCategory);
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[#5a6b4f] to-[#3d4a36]">
-      {/* Header */}
-      <header className="border-b bg-white/80 backdrop-blur-sm sticky top-0 z-10">
-        <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <h1 className="text-2xl font-bold text-primary">Telegram Usernames</h1>
-          <Button 
-            variant="ghost" 
-            onClick={() => setShowContacts(!showContacts)}
-            className="gap-2"
-          >
-            <Icon name="Mail" size={18} />
-            Контакты
-          </Button>
-        </div>
-      </header>
-
-      {/* Contacts Section */}
-      {showContacts && (
-        <div className="bg-primary/5 border-b animate-fade-in">
-          <div className="container mx-auto px-4 py-8">
-            <div className="max-w-2xl mx-auto text-center space-y-4">
-              <h2 className="text-2xl font-bold">Свяжитесь с нами</h2>
-              <p className="text-muted-foreground">
-                Хотите приобрести один из юзернеймов или всю галерею? Просто сделайте предложение и это будет отличная сделка.
-              </p>
-              <div className="flex flex-wrap gap-4 justify-center">
-                <Button 
-                  variant="default" 
-                  className="gap-2"
-                  onClick={() => window.open('https://t.me/Adkitten', '_blank')}
-                >
-                  <Icon name="Send" size={18} />
-                  Связаться
-                </Button>
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
-
+    <div className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="container mx-auto px-4 py-16 text-center">
-        <div className="max-w-3xl mx-auto space-y-6 animate-fade-in">
-          <h2 className="text-5xl font-bold tracking-tight">
-            Коллекция юзернеймов <br />
-            <span className="text-primary">известных личностей</span>
-          </h2>
-          <p className="text-xl text-muted-foreground">
-            Эксклюзивная галерея Telegram-аккаунтов знаменитостей, блогеров и медийных персон
-          </p>
+      <section className="relative overflow-hidden border-b border-border">
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-secondary/5"></div>
+        <div className="container relative mx-auto px-4 py-24 md:py-32 text-center">
+          <div className="max-w-4xl mx-auto space-y-8 animate-fade-in">
+            <div className="inline-block mb-4">
+              <Badge variant="outline" className="text-sm font-light tracking-wider border-primary/30 text-primary px-4 py-1.5">
+                DIGITAL LEGACY COLLECTION
+              </Badge>
+            </div>
+            <h1 className="text-5xl md:text-7xl font-bold tracking-tight leading-tight">
+              ICONS ARCHIVE
+            </h1>
+            <p className="text-2xl md:text-3xl text-primary font-light tracking-wide">
+              Владение историей
+            </p>
+            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+              Эксклюзивная коллекция Telegram-аккаунтов легендарных личностей, 
+              чьи имена вписаны в историю золотыми буквами
+            </p>
+          </div>
         </div>
       </section>
 
       {/* Categories Filter */}
-      <section className="container mx-auto px-4 pb-8">
-        <div className="flex flex-wrap gap-2 justify-center animate-scale-in">
-          {categories.map((category) => (
-            <Button
-              key={category}
-              variant={selectedCategory === category ? 'default' : 'outline'}
-              onClick={() => setSelectedCategory(category)}
-              className="transition-all"
-            >
-              {category}
-            </Button>
-          ))}
+      <section className="sticky top-0 z-10 bg-background/95 backdrop-blur-sm border-b border-border">
+        <div className="container mx-auto px-4 py-6">
+          <div className="flex flex-wrap gap-3 justify-center animate-scale-in">
+            {categories.map((category) => (
+              <Button
+                key={category}
+                variant={selectedCategory === category ? 'default' : 'outline'}
+                onClick={() => setSelectedCategory(category)}
+                className="transition-all font-medium tracking-wide"
+                size="lg"
+              >
+                {category}
+              </Button>
+            ))}
+          </div>
         </div>
       </section>
 
       {/* Gallery Grid */}
-      <section className="container mx-auto px-4 pb-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-8">
+      <section className="container mx-auto px-4 py-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-7xl mx-auto">
           {filteredUsernames.map((user, index) => (
             <Card 
               key={user.id} 
-              className="group hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 animate-fade-in overflow-hidden"
-              style={{ animationDelay: `${index * 50}ms` }}
+              className="group overflow-hidden bg-card border-border hover:border-primary/50 transition-all duration-500 hover:shadow-2xl hover:shadow-primary/10"
+              style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="relative h-80 overflow-hidden">
-                <img 
-                  src={user.image} 
-                  alt={user.name}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-                <Badge 
-                  variant="secondary" 
-                  className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm"
-                >
-                  {user.category}
-                </Badge>
-              </div>
-              
-              <CardContent className="p-8 space-y-6">
-                <div className="space-y-3">
-                  <div className="flex items-center gap-2">
-                    <Icon name="AtSign" size={24} className="text-primary" />
-                    <h3 className="font-bold text-2xl group-hover:text-primary transition-colors">
-                      {user.username}
-                    </h3>
+              <CardContent className="p-0">
+                {/* Image Section */}
+                <div className="relative h-80 overflow-hidden bg-muted">
+                  <img 
+                    src={user.image} 
+                    alt={user.name}
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-card via-card/60 to-transparent"></div>
+                  <div className="absolute top-4 right-4">
+                    <Badge className="bg-primary text-primary-foreground font-medium tracking-wider">
+                      {user.category}
+                    </Badge>
                   </div>
-                  <h4 className="text-xl font-semibold text-foreground">{user.name}</h4>
-                  <p className="text-base text-muted-foreground">{user.description}</p>
                 </div>
 
-                <div className="space-y-3">
-                  <h5 className="font-semibold text-sm uppercase tracking-wide text-primary">Достижения:</h5>
-                  <ul className="space-y-2">
-                    {user.achievements.map((achievement, idx) => (
-                      <li key={idx} className="flex items-start gap-2 text-sm text-muted-foreground">
-                        <Icon name="Award" size={16} className="text-primary mt-0.5 flex-shrink-0" />
-                        <span>{achievement}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+                {/* Content Section */}
+                <div className="p-8 space-y-6">
+                  {/* Username - главный актив */}
+                  <div className="text-center py-4 border-y border-border">
+                    <p className="text-4xl font-bold font-mono text-primary tracking-tight">
+                      {user.username}
+                    </p>
+                  </div>
 
-                <div className="flex gap-3 pt-4 border-t">
-                  <Button 
-                    variant="default" 
-                    className="flex-1 gap-2"
-                    onClick={() => window.open(`https://t.me/${user.username.replace('@', '')}`, '_blank')}
-                  >
-                    <Icon name="Send" size={18} />
-                    Telegram
-                  </Button>
-                  <Button 
-                    variant="outline" 
-                    className="flex-1 gap-2"
-                    onClick={() => window.open(user.wikipedia, '_blank')}
-                  >
-                    <Icon name="BookOpen" size={18} />
-                    Википедия
-                  </Button>
+                  {/* Name & Status */}
+                  <div className="space-y-2 text-center">
+                    <h3 className="text-2xl font-bold text-foreground">
+                      {user.name}
+                    </h3>
+                    <p className="text-lg text-primary/90 font-light italic">
+                      {user.statusLine}
+                    </p>
+                  </div>
+
+                  {/* Narrative */}
+                  <div className="prose prose-invert max-w-none">
+                    <p className="text-muted-foreground leading-relaxed text-sm">
+                      {user.narrative}
+                    </p>
+                  </div>
+
+                  {/* Key Legacy */}
+                  <div className="space-y-3 pt-4 border-t border-border">
+                    <h4 className="text-xs uppercase tracking-widest text-primary font-semibold">
+                      Ключевое наследие
+                    </h4>
+                    <ul className="space-y-2">
+                      {user.keyLegacy.map((item, i) => (
+                        <li key={i} className="flex items-start gap-3 text-sm text-foreground/80">
+                          <span className="text-primary mt-1">◆</span>
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  {/* Footer */}
+                  <div className="pt-6 border-t border-border">
+                    <a 
+                      href={user.wikipedia}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors group/link"
+                    >
+                      <Icon name="ExternalLink" size={16} />
+                      <span className="border-b border-transparent group-hover/link:border-primary transition-all">
+                        Подробнее о личности
+                      </span>
+                    </a>
+                  </div>
                 </div>
               </CardContent>
             </Card>
@@ -291,10 +288,45 @@ export default function Index() {
         </div>
       </section>
 
+      {/* CTA Section */}
+      <section className="border-t border-border bg-gradient-to-b from-transparent to-primary/5">
+        <div className="container mx-auto px-4 py-24">
+          <div className="max-w-3xl mx-auto text-center space-y-8">
+            <div className="space-y-4">
+              <h2 className="text-4xl md:text-5xl font-bold tracking-tight">
+                Для серьёзных коллекционеров
+              </h2>
+              <p className="text-xl text-muted-foreground leading-relaxed">
+                Хотите приобрести юзернейм из коллекции или обсудить владение всем архивом? 
+                Мы открыты для предложений от взыскательных покупателей.
+              </p>
+            </div>
+            
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-6">
+              <Button 
+                size="lg"
+                className="gap-2 text-lg px-8 py-6"
+                onClick={() => window.open('https://t.me/Adkitten', '_blank')}
+              >
+                <Icon name="Send" size={20} />
+                Обсудить приобретение
+              </Button>
+            </div>
+
+            <p className="text-sm text-muted-foreground pt-8">
+              Каждый юзернейм — это уникальный цифровой актив, 
+              история которого принадлежит владельцу
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
-      <footer className="border-t bg-white/50 backdrop-blur-sm">
-        <div className="container mx-auto px-4 py-8 text-center text-sm text-muted-foreground">
-          <p>© 2024 Telegram Usernames Gallery. Все права защищены.</p>
+      <footer className="border-t border-border bg-card/50">
+        <div className="container mx-auto px-4 py-8">
+          <div className="text-center text-sm text-muted-foreground">
+            <p>© 2026 ICONS ARCHIVE — Premium Digital Assets Collection</p>
+          </div>
         </div>
       </footer>
     </div>
