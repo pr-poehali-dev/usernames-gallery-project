@@ -122,7 +122,7 @@ const usernames: Username[] = [
     category: 'Искусство',
     statusLine: 'Визуальный летописец эпохи перемен',
     narrative: 'Камера Гордона Паркса запечатлела историю целой эпохи. Первый афроамериканский фотограф Life Magazine, режиссёр культового фильма «Шафт», документалист движения за гражданские права — это человек, который использовал искусство как оружие против несправедливости. Его снимки изменили восприятие расовых проблем в Америке. Имя Паркса — это часть визуального наследия человечества.',
-    image: 'https://cdn.poehali.dev/files/file-20180424-57598-utjjlz.jpg?v=2',
+    image: 'https://cdn.poehali.dev/files/01parks1-facebookJumbo-v2.jpg',
     wikipedia: 'https://en.wikipedia.org/wiki/Gordon_Parks',
     keyLegacy: [
       'Первый афроамериканский фотограф Life Magazine',
