@@ -106,7 +106,7 @@ const usernames: Username[] = [
     category: 'Спорт',
     statusLine: 'Величайшая универсальная спортсменка столетия',
     narrative: 'Лёгкая атлетика. Баскетбол. Бейсбол. Гольф. Бейб Захариас не просто побеждала — она доминировала во всех видах спорта, к которым прикасалась. Две олимпийские золотые медали, десять титулов LPGA и бесконечное количество рекордов. Её имя — синоним слова «универсальность». Это не просто спортсменка. Это легенда XX века.',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Babe_Didrikson_1932.jpg/800px-Babe_Didrikson_1932.jpg',
+    image: 'https://cdn.poehali.dev/files/S600xU_2x.jpeg',
     wikipedia: 'https://en.wikipedia.org/wiki/Babe_Didrikson_Zaharias',
     keyLegacy: [
       '2 золотые и серебряная медали на Олимпиаде-1932',
