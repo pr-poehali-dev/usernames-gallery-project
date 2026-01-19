@@ -89,7 +89,7 @@ const usernames: Username[] = [
     category: 'Наука',
     statusLine: 'Скрытый архитектор ДНК',
     narrative: 'Её работа открыла секрет жизни. Знаменитая «Фотография 51» — рентгеновский снимок структуры ДНК — стала ключом к одному из величайших научных открытий XX века. Но история не сохранила её имя так, как следовало бы. Розалинд Франклин — это имя, которое должно быть в каждом учебнике биологии. Владение её юзернеймом — это акт справедливости.',
-    image: 'https://upload.wikimedia.org/wikipedia/en/thumb/1/11/Rosalind_Franklin.jpg/800px-Rosalind_Franklin.jpg',
+    image: 'https://cdn.poehali.dev/files/file-20180424-57598-utjjlz.jpg',
     wikipedia: 'https://en.wikipedia.org/wiki/Rosalind_Franklin',
     keyLegacy: [
       'Автор «Фотографии 51» структуры ДНК',
