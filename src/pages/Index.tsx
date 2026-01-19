@@ -138,7 +138,7 @@ const usernames: Username[] = [
     category: 'Наука',
     statusLine: 'Пионер биохимии и наставник поколений',
     narrative: 'Путь женщины в науке XX века был полон барьеров. Линда Кэрролл Хэмилтон преодолела их все. Её исследования в области метаболизма клеток открыли новые горизонты для биохимии, а её наставническая работа вдохновила целое поколение женщин-учёных. Имя Хэмилтон — это символ пути, прокладываемого для тех, кто придёт после.',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Linda_B_Buck_in_2009.jpg/800px-Linda_B_Buck_in_2009.jpg',
+    image: 'https://cdn.poehali.dev/files/S600xU_2x (1).jpeg',
     wikipedia: 'https://en.wikipedia.org/wiki/Linda_Carroll_Hamilton',
     keyLegacy: [
       'Пионер исследований метаболизма клеток',
