@@ -273,7 +273,7 @@ export default function Index() {
                             rel="noopener noreferrer"
                             className="relative block"
                           >
-                            <p className="text-4xl font-bold font-mono text-primary tracking-tight transition-all duration-300 group-hover/username:scale-105">
+                            <p className="text-2xl md:text-4xl font-bold font-mono text-primary tracking-tight transition-all duration-300 group-hover/username:scale-105">
                               {user.username}
                             </p>
                           </a>
@@ -287,7 +287,7 @@ export default function Index() {
                               rel="noopener noreferrer"
                               className="relative block"
                             >
-                              <p className="text-2xl font-bold font-mono text-secondary tracking-tight transition-all duration-300 group-hover/alt:scale-105">
+                              <p className="text-xl md:text-2xl font-bold font-mono text-secondary tracking-tight transition-all duration-300 group-hover/alt:scale-105">
                                 {user.alternativeUsername}
                               </p>
                             </a>
@@ -338,7 +338,7 @@ export default function Index() {
                           onClick={() => window.open(`https://t.me/${user.username.replace('@', '')}`, '_blank')}
                         >
                           <Icon name="Send" size={16} className="transition-transform group-hover/btn:translate-x-0.5" />
-                          <span>Telegram</span>
+                          <span className="truncate">{user.username}</span>
                         </Button>
                         <Button
                           variant="outline"
@@ -358,7 +358,7 @@ export default function Index() {
                           onClick={() => window.open(`https://t.me/${user.alternativeUsername.replace('@', '')}`, '_blank')}
                         >
                           <Icon name="Send" size={16} className="transition-transform group-hover/btn:translate-x-0.5" />
-                          <span>{user.alternativeUsername}</span>
+                          <span className="truncate">{user.alternativeUsername}</span>
                         </Button>
                       )}
                     </div>
