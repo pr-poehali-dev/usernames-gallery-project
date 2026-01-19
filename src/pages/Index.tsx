@@ -72,7 +72,7 @@ const usernames: Username[] = [
     category: 'Кино',
     statusLine: 'Первая звезда, разрушившая расовые барьеры',
     narrative: 'Голливуд 1950-х был местом, где цвет кожи определял твою судьбу. Дороти Дэндридж стала первой афроамериканкой, номинированной на «Оскар» за лучшую женскую роль. Её красота, талант и сила воли открыли дверь целому поколению чернокожих актёров. Имя Дэндридж — это история о мужестве, несломленной воле и первопроходческом духе.',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Dorothy_Dandridge_-_publicity.jpg/800px-Dorothy_Dandridge_-_publicity.jpg',
+    image: 'https://cdn.poehali.dev/files/i (1) (8).jpeg',
     wikipedia: 'https://en.wikipedia.org/wiki/Dorothy_Dandridge',
     keyLegacy: [
       'Первая афроамериканка в номинации «Оскар» (1955)',
@@ -120,7 +120,7 @@ const usernames: Username[] = [
     category: 'Искусство',
     statusLine: 'Визуальный летописец эпохи перемен',
     narrative: 'Камера Гордона Паркса запечатлела историю целой эпохи. Первый афроамериканский фотограф Life Magazine, режиссёр культового фильма «Шафт», документалист движения за гражданские права — это человек, который использовал искусство как оружие против несправедливости. Его снимки изменили восприятие расовых проблем в Америке. Имя Паркса — это часть визуального наследия человечества.',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Gordon_Parks_NYWTS.jpg/800px-Gordon_Parks_NYWTS.jpg',
+    image: 'https://cdn.poehali.dev/files/file-20180424-57598-utjjlz.jpg',
     wikipedia: 'https://en.wikipedia.org/wiki/Gordon_Parks',
     keyLegacy: [
       'Первый афроамериканский фотограф Life Magazine',
