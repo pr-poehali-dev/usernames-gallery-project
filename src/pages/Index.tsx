@@ -30,7 +30,7 @@ const usernames: Username[] = [
     wikipedia: 'https://en.wikipedia.org/wiki/Martina_Navratilova',
     themeColor: '220 18% 8%',
     keyLegacy: [
-      '167 недель первой ракеткой мира',
+      '332 недели первой ракеткой мира',
       '18 побед на турнирах Большого шлема (одиночки)',
       '59 титулов Grand Slam (все категории)',
       'Активистка за права ЛГБТ-сообщества'
