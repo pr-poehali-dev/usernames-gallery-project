@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
@@ -151,10 +151,32 @@ const categories = ['Все', 'Спорт', 'Кино', 'Наука', 'Иску�
 
 export default function Index() {
   const [selectedCategory, setSelectedCategory] = useState('Все');
+  const [visibleCards, setVisibleCards] = useState<Set<number>>(new Set());
+  const cardRefs = useRef<Map<number, HTMLDivElement>>(new Map());
 
   const filteredUsernames = selectedCategory === 'Все' 
     ? usernames 
     : usernames.filter(u => u.category === selectedCategory);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const id = Number(entry.target.getAttribute('data-id'));
+            setVisibleCards((prev) => new Set([...prev, id]));
+          }
+        });
+      },
+      { threshold: 0.1, rootMargin: '50px' }
+    );
+
+    cardRefs.current.forEach((card) => {
+      if (card) observer.observe(card);
+    });
+
+    return () => observer.disconnect();
+  }, [filteredUsernames]);
 
   return (
     <div className="min-h-screen bg-background">
@@ -204,86 +226,112 @@ export default function Index() {
       {/* Gallery Grid */}
       <section className="container mx-auto px-4 py-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-7xl mx-auto">
-          {filteredUsernames.map((user, index) => (
-            <Card 
-              key={user.id} 
-              className="group overflow-hidden bg-card border-border hover:border-primary/50 transition-all duration-500 hover:shadow-2xl hover:shadow-primary/10"
-              style={{ animationDelay: `${index * 0.1}s` }}
+          {filteredUsernames.map((user) => (
+            <div
+              key={user.id}
+              ref={(el) => {
+                if (el) cardRefs.current.set(user.id, el);
+              }}
+              data-id={user.id}
+              className={`transition-all duration-700 ${
+                visibleCards.has(user.id) 
+                  ? 'opacity-100 translate-y-0' 
+                  : 'opacity-0 translate-y-12'
+              }`}
             >
-              <CardContent className="p-0">
-                {/* Image Section */}
-                <div className="relative h-80 overflow-hidden bg-muted">
-                  <img 
-                    src={user.image} 
-                    alt={user.name}
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-card via-card/60 to-transparent"></div>
-                  <div className="absolute top-4 right-4">
-                    <Badge className="bg-primary text-primary-foreground font-medium tracking-wider">
-                      {user.category}
-                    </Badge>
-                  </div>
-                </div>
-
-                {/* Content Section */}
-                <div className="p-8 space-y-6">
-                  {/* Username - главный актив */}
-                  <div className="text-center py-4 border-y border-border">
-                    <p className="text-4xl font-bold font-mono text-primary tracking-tight">
-                      {user.username}
-                    </p>
+              <Card 
+                className="group overflow-hidden bg-card border-border hover:border-primary/50 transition-all duration-500 hover:shadow-2xl hover:shadow-primary/10 h-full"
+              >
+                <CardContent className="p-0 flex flex-col h-full">
+                  {/* Image Section */}
+                  <div className="relative h-80 overflow-hidden bg-muted">
+                    <img 
+                      src={user.image} 
+                      alt={user.name}
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-card via-card/60 to-transparent opacity-90 group-hover:opacity-95 transition-opacity duration-500"></div>
+                    <div className="absolute top-4 right-4">
+                      <Badge className="bg-primary text-primary-foreground font-medium tracking-wider shadow-lg">
+                        {user.category}
+                      </Badge>
+                    </div>
                   </div>
 
-                  {/* Name & Status */}
-                  <div className="space-y-2 text-center">
-                    <h3 className="text-2xl font-bold text-foreground">
-                      {user.name}
-                    </h3>
-                    <p className="text-lg text-primary/90 font-light italic">
-                      {user.statusLine}
-                    </p>
-                  </div>
+                  {/* Content Section */}
+                  <div className="p-8 space-y-6 flex-1 flex flex-col">
+                    {/* Username - главный актив */}
+                    <div className="relative text-center py-4 border-y border-border overflow-hidden group/username">
+                      <div className="absolute inset-0 animate-shimmer opacity-0 group-hover/username:opacity-100 transition-opacity duration-500"></div>
+                      <a
+                        href={`https://t.me/${user.username.replace('@', '')}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="relative block"
+                      >
+                        <p className="text-4xl font-bold font-mono text-primary tracking-tight transition-all duration-300 group-hover/username:scale-105">
+                          {user.username}
+                        </p>
+                      </a>
+                    </div>
 
-                  {/* Narrative */}
-                  <div className="prose prose-invert max-w-none">
-                    <p className="text-muted-foreground leading-relaxed text-sm">
-                      {user.narrative}
-                    </p>
-                  </div>
+                    {/* Name & Status */}
+                    <div className="space-y-2 text-center">
+                      <h3 className="text-2xl font-bold text-foreground">
+                        {user.name}
+                      </h3>
+                      <p className="text-lg text-primary/90 font-light italic">
+                        {user.statusLine}
+                      </p>
+                    </div>
 
-                  {/* Key Legacy */}
-                  <div className="space-y-3 pt-4 border-t border-border">
-                    <h4 className="text-xs uppercase tracking-widest text-primary font-semibold">
-                      Ключевое наследие
-                    </h4>
-                    <ul className="space-y-2">
-                      {user.keyLegacy.map((item, i) => (
-                        <li key={i} className="flex items-start gap-3 text-sm text-foreground/80">
-                          <span className="text-primary mt-1">◆</span>
-                          <span>{item}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
+                    {/* Narrative */}
+                    <div className="prose prose-invert max-w-none flex-1">
+                      <p className="text-muted-foreground leading-relaxed text-sm">
+                        {user.narrative}
+                      </p>
+                    </div>
 
-                  {/* Footer */}
-                  <div className="pt-6 border-t border-border">
-                    <a 
-                      href={user.wikipedia}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors group/link"
-                    >
-                      <Icon name="ExternalLink" size={16} />
-                      <span className="border-b border-transparent group-hover/link:border-primary transition-all">
-                        Подробнее о личности
-                      </span>
-                    </a>
+                    {/* Key Legacy */}
+                    <div className="space-y-3 pt-4 border-t border-border">
+                      <h4 className="text-xs uppercase tracking-widest text-primary font-semibold">
+                        Ключевое наследие
+                      </h4>
+                      <ul className="space-y-2">
+                        {user.keyLegacy.map((item, i) => (
+                          <li key={i} className="flex items-start gap-3 text-sm text-foreground/80">
+                            <span className="text-primary mt-1">◆</span>
+                            <span>{item}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+
+                    {/* Actions */}
+                    <div className="pt-6 border-t border-border flex gap-3">
+                      <Button
+                        variant="outline"
+                        size="sm"
+                        className="flex-1 gap-2 group/btn"
+                        onClick={() => window.open(`https://t.me/${user.username.replace('@', '')}`, '_blank')}
+                      >
+                        <Icon name="Send" size={16} className="transition-transform group-hover/btn:translate-x-0.5" />
+                        <span>Telegram</span>
+                      </Button>
+                      <Button
+                        variant="outline"
+                        size="sm"
+                        className="flex-1 gap-2 group/btn"
+                        onClick={() => window.open(user.wikipedia, '_blank')}
+                      >
+                        <Icon name="BookOpen" size={16} className="transition-transform group-hover/btn:scale-110" />
+                        <span>Wikipedia</span>
+                      </Button>
+                    </div>
                   </div>
-                </div>
-              </CardContent>
-            </Card>
+                </CardContent>
+              </Card>
+            </div>
           ))}
         </div>
       </section>
