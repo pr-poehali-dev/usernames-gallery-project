@@ -24,7 +24,7 @@ const usernames: Username[] = [
     category: 'Спорт',
     statusLine: 'Символ абсолютного доминирования',
     narrative: 'Имя Навратиловой — это эпоха. Восемнадцать титулов Большого шлема в одиночном разряде, 167 недель на вершине мирового рейтинга, и абсолютное господство в женском теннисе конца XX века. Но это не просто цифры — это история о женщине, которая изменила правила игры, разрушила стереотипы и стала голосом целого поколения. Владение этим юзернеймом — это владение частью спортивной легенды, которая живёт вне времени.',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Martina_Navratilova_2015.jpg/800px-Martina_Navratilova_2015.jpg',
+    image: 'https://cdn.poehali.dev/files/i (1) (7).jpeg',
     wikipedia: 'https://en.wikipedia.org/wiki/Martina_Navratilova',
     keyLegacy: [
       '167 недель первой ракеткой мира',
