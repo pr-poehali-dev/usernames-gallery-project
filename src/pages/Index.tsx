@@ -161,7 +161,7 @@ const usernames: Username[] = [
 const categories = ['All', 'Sports', 'Cinema', 'Science', 'Art'];
 
 export default function Index() {
-  const [selectedCategory, setSelectedCategory] = useState('Все');
+  const [selectedCategory, setSelectedCategory] = useState('All');
   const [visibleCards, setVisibleCards] = useState<Set<number>>(new Set());
   const [activeTheme, setActiveTheme] = useState('220 18% 8%');
   const cardRefs = useRef<Map<number, HTMLDivElement>>(new Map());
