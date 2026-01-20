@@ -22,7 +22,7 @@ const usernames: Username[] = [
   {
     id: 1,
     username: '@MartinaNavratilova',
-    name: 'Мартина Навратилова',
+    name: 'Martina Navratilova',
     category: 'Sports',
     statusLine: 'Symbol of absolute dominance',
     narrative: 'Navratilova's name is an era. Eighteen Grand Slam singles titles, 332 weeks at the top of the world ranking, and absolute dominance in women's tennis of the late 20th century. But these are not just numbers — this is a story about a woman who changed the rules of the game, broke stereotypes and became the voice of an entire generation. Owning this username means owning a piece of sports legend that lives beyond time.',
