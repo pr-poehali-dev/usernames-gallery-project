@@ -128,7 +128,7 @@ const usernames: Username[] = [
     name: 'Gordon Parks',
     category: 'Art',
     statusLine: 'Visual chronicler of an era of change',
-    narrative: 'Gordon Parks' camera captured the history of an entire era. First African American photographer for Life Magazine, director of the cult film "Shaft", documentarian of the civil rights movement — this is a man who used art as a weapon against injustice. His photographs changed the perception of racial issues in America. The Parks name is part of humanity's visual heritage.',
+    narrative: "Gordon Parks' camera captured the history of an entire era. First African American photographer for Life Magazine, director of the cult film 'Shaft', documentarian of the civil rights movement — this is a man who used art as a weapon against injustice. His photographs changed the perception of racial issues in America. The Parks name is part of humanity's visual heritage.",
     image: 'https://cdn.poehali.dev/files/01parks1-facebookJumbo-v2.jpg',
     wikipedia: 'https://en.wikipedia.org/wiki/Gordon_Parks',
     themeColor: '35 25% 8%',
