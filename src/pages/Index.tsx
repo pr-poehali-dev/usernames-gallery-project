@@ -23,142 +23,142 @@ const usernames: Username[] = [
     id: 1,
     username: '@MartinaNavratilova',
     name: 'Мартина Навратилова',
-    category: 'Спорт',
-    statusLine: 'Символ абсолютного доминирования',
-    narrative: 'Имя Навратиловой — это эпоха. Восемнадцать титулов Большого шлема в одиночном разряде, 167 недель на вершине мирового рейтинга, и абсолютное господство в женском теннисе конца XX века. Но это не просто цифры — это история о женщине, которая изменила правила игры, разрушила стереотипы и стала голосом целого поколения. Владение этим юзернеймом — это владение частью спортивной легенды, которая живёт вне времени.',
+    category: 'Sports',
+    statusLine: 'Symbol of absolute dominance',
+    narrative: 'Navratilova's name is an era. Eighteen Grand Slam singles titles, 332 weeks at the top of the world ranking, and absolute dominance in women's tennis of the late 20th century. But these are not just numbers — this is a story about a woman who changed the rules of the game, broke stereotypes and became the voice of an entire generation. Owning this username means owning a piece of sports legend that lives beyond time.',
     image: 'https://cdn.poehali.dev/files/i (1) (7).jpeg',
     wikipedia: 'https://en.wikipedia.org/wiki/Martina_Navratilova',
     themeColor: '220 18% 8%',
     keyLegacy: [
-      '332 недели первой ракеткой мира',
-      '18 побед на турнирах Большого шлема (одиночки)',
-      '59 титулов Grand Slam (все категории)',
-      'Активистка за права ЛГБТ-сообщества'
+      '332 weeks ranked World No. 1',
+      '18 Grand Slam singles titles',
+      '59 Grand Slam titles (all categories)',
+      'LGBTQ+ rights activist'
     ]
   },
   {
     id: 2,
     username: '@AlOerter',
-    name: 'Эл Эртер',
-    category: 'Спорт',
-    statusLine: 'Эталон олимпийского совершенства',
-    narrative: 'Четыре Олимпиады подряд. Четыре золотые медали в метании диска. Никто в истории лёгкой атлетики не повторил эту серию побед. Эртер — это имя, вписанное в олимпийскую легенду золотыми буквами. Это не просто спортсмен — это эталон постоянства, силы воли и безупречной техники на протяжении двенадцати лет.',
+    name: 'Al Oerter',
+    category: 'Sports',
+    statusLine: 'Standard of Olympic perfection',
+    narrative: 'Four consecutive Olympics. Four gold medals in discus throw. No one in track and field history has repeated this winning streak. Oerter is a name written in Olympic legend in golden letters. This is not just an athlete — this is the standard of consistency, willpower and flawless technique over twelve years.',
     image: 'https://cdn.poehali.dev/files/149019842_4709286_Al_Oerter_1495190480_95047.jpg',
     wikipedia: 'https://en.wikipedia.org/wiki/Al_Oerter',
     themeColor: '200 25% 12%',
     keyLegacy: [
-      'Четырёхкратный олимпийский чемпион',
-      'Победы на Играх 1956–1968',
-      'Единственный в истории атлетики с такими результатами',
-      'Четыре олимпийских рекорда'
+      'Four-time Olympic champion',
+      'Gold medals at 1956–1968 Games',
+      'Only athlete in history with such achievements',
+      'Four Olympic records'
     ]
   },
   {
     id: 3,
     username: '@FannyBlankersKoen',
-    name: 'Фанни Бланкерс-Кун',
-    category: 'Спорт',
-    statusLine: 'Летающая домохозяйка, изменившая мир',
-    narrative: 'Мать двоих детей. Тридцать лет. Четыре золотых медали на одной Олимпиаде. Фанни разрушила миф о том, что материнство несовместимо с профессиональным спортом. В 1948 году она стала символом нового времени — сильной, независимой, непобедимой. Её имя — это вызов предрассудкам и доказательство того, что женщины могут быть абсолютно всем.',
+    name: 'Fanny Blankers-Koen',
+    category: 'Sports',
+    statusLine: 'The Flying Housewife who changed the world',
+    narrative: 'Mother of two children. Thirty years old. Four gold medals at one Olympics. Fanny shattered the myth that motherhood is incompatible with professional sports. In 1948, she became the symbol of a new era — strong, independent, invincible. Her name is a challenge to prejudice and proof that women can be absolutely anything.',
     image: 'https://cdn.poehali.dev/files/180426095255-fanny-blankers-koen-athlete-of-the-century-trophy.jpg',
     wikipedia: 'https://en.wikipedia.org/wiki/Fanny_Blankers-Koen',
     themeColor: '25 35% 10%',
     keyLegacy: [
-      '4 золотые медали на Олимпиаде-1948',
-      'Первая женщина с четырьмя победами на одних Играх',
-      'Мировые рекорды в беге и прыжках',
-      'Разрушила стереотипы о женщинах в спорте'
+      '4 gold medals at 1948 Olympics',
+      'First woman with four victories at one Games',
+      'World records in running and jumping',
+      'Shattered stereotypes about women in sports'
     ]
   },
   {
     id: 4,
     username: '@DorothyDandridge',
-    name: 'Дороти Дэндридж',
-    category: 'Кино',
-    statusLine: 'Первая звезда, разрушившая расовые барьеры',
-    narrative: 'Голливуд 1950-х был местом, где цвет кожи определял твою судьбу. Дороти Дэндридж стала первой афроамериканкой, номинированной на «Оскар» за лучшую женскую роль. Её красота, талант и сила воли открыли дверь целому поколению чернокожих актёров. Имя Дэндридж — это история о мужестве, несломленной воле и первопроходческом духе.',
+    name: 'Dorothy Dandridge',
+    category: 'Cinema',
+    statusLine: 'First star to break racial barriers',
+    narrative: 'Hollywood in the 1950s was a place where skin color determined your fate. Dorothy Dandridge became the first African American woman nominated for an Academy Award for Best Actress. Her beauty, talent and willpower opened the door for an entire generation of Black actors. The Dandridge name is a story of courage, unbreakable will and pioneering spirit.',
     image: 'https://cdn.poehali.dev/files/i (1) (8).jpeg',
     wikipedia: 'https://en.wikipedia.org/wiki/Dorothy_Dandridge',
     themeColor: '0 0% 8%',
     keyLegacy: [
-      'Первая афроамериканка в номинации «Оскар» (1955)',
-      'Звезда фильма «Кармен Джонс»',
-      'Пионер борьбы за права чернокожих в Голливуде',
-      'Икона стиля и элегантности 1950-х'
+      'First African American Best Actress Oscar nominee (1955)',
+      'Star of "Carmen Jones"',
+      'Pioneer of Black rights struggle in Hollywood',
+      'Style and elegance icon of the 1950s'
     ]
   },
   {
     id: 5,
     username: '@RosalindFranklin',
-    name: 'Розалинд Франклин',
-    category: 'Наука',
-    statusLine: 'Скрытый архитектор ДНК',
-    narrative: 'Её работа открыла секрет жизни. Знаменитая «Фотография 51» — рентгеновский снимок структуры ДНК — стала ключом к одному из величайших научных открытий XX века. Но история не сохранила её имя так, как следовало бы. Розалинд Франклин — это имя, которое должно быть в каждом учебнике биологии. Владение её юзернеймом — это акт справедливости.',
+    name: 'Rosalind Franklin',
+    category: 'Science',
+    statusLine: 'Hidden architect of DNA',
+    narrative: 'Her work unlocked the secret of life. The famous "Photo 51" — an X-ray image of DNA structure — became the key to one of the greatest scientific discoveries of the 20th century. But history didn't preserve her name as it should have. Rosalind Franklin is a name that should be in every biology textbook. Owning her username is an act of justice.',
     image: 'https://cdn.poehali.dev/files/file-20180424-57598-utjjlz.jpg',
     wikipedia: 'https://en.wikipedia.org/wiki/Rosalind_Franklin',
     themeColor: '210 20% 10%',
     keyLegacy: [
-      'Автор «Фотографии 51» структуры ДНК',
-      'Ключевой вклад в открытие двойной спирали',
-      'Пионер рентгеновской кристаллографии',
-      'Исследования структуры вирусов'
+      'Author of "Photo 51" of DNA structure',
+      'Key contribution to double helix discovery',
+      'Pioneer of X-ray crystallography',
+      'Virus structure research'
     ]
   },
   {
     id: 6,
     username: '@BabeZaharias',
     alternativeUsername: '@MildredDidrikson',
-    name: 'Бейб Дидриксон Захариас',
-    category: 'Спорт',
-    statusLine: 'Величайшая универсальная спортсменка столетия',
-    narrative: 'Лёгкая атлетика. Баскетбол. Бейсбол. Гольф. Бейб Захариас не просто побеждала — она доминировала во всех видах спорта, к которым прикасалась. Две олимпийские золотые медали, десять титулов LPGA и бесконечное количество рекордов. Её имя — синоним слова «универсальность». Это не просто спортсменка. Это легенда XX века.',
+    name: 'Babe Didrikson Zaharias',
+    category: 'Sports',
+    statusLine: 'Greatest all-around female athlete of the century',
+    narrative: 'Track and field. Basketball. Baseball. Golf. Babe Zaharias didn't just win — she dominated every sport she touched. Two Olympic gold medals, ten LPGA titles, and countless records. Her name is synonymous with versatility. This is not just an athlete. This is a 20th century legend.',
     image: 'https://cdn.poehali.dev/files/S600xU_2x.jpeg',
     wikipedia: 'https://en.wikipedia.org/wiki/Babe_Didrikson_Zaharias',
     themeColor: '30 40% 12%',
     keyLegacy: [
-      '2 золотые и серебряная медали на Олимпиаде-1932',
-      '10 титулов LPGA в гольфе',
-      'Успех в баскетболе, бейсболе и лёгкой атлетике',
-      'Признана величайшей спортсменкой первой половины XX века'
+      '2 gold and 1 silver medals at 1932 Olympics',
+      '10 LPGA golf titles',
+      'Success in basketball, baseball and track & field',
+      'Named greatest female athlete of first half of 20th century'
     ]
   },
   {
     id: 7,
     username: '@GordonParks',
-    name: 'Гордон Паркс',
-    category: 'Искусство',
-    statusLine: 'Визуальный летописец эпохи перемен',
-    narrative: 'Камера Гордона Паркса запечатлела историю целой эпохи. Первый афроамериканский фотограф Life Magazine, режиссёр культового фильма «Шафт», документалист движения за гражданские права — это человек, который использовал искусство как оружие против несправедливости. Его снимки изменили восприятие расовых проблем в Америке. Имя Паркса — это часть визуального наследия человечества.',
+    name: 'Gordon Parks',
+    category: 'Art',
+    statusLine: 'Visual chronicler of an era of change',
+    narrative: 'Gordon Parks' camera captured the history of an entire era. First African American photographer for Life Magazine, director of the cult film "Shaft", documentarian of the civil rights movement — this is a man who used art as a weapon against injustice. His photographs changed the perception of racial issues in America. The Parks name is part of humanity's visual heritage.',
     image: 'https://cdn.poehali.dev/files/01parks1-facebookJumbo-v2.jpg',
     wikipedia: 'https://en.wikipedia.org/wiki/Gordon_Parks',
     themeColor: '35 25% 8%',
     keyLegacy: [
-      'Первый афроамериканский фотограф Life Magazine',
-      'Режиссёр культового фильма «Шафт» (1971)',
-      'Документалист движения за гражданские права',
-      'Автор, композитор и активист'
+      'First African American Life Magazine photographer',
+      'Director of cult film "Shaft" (1971)',
+      'Civil rights movement documentarian',
+      'Author, composer and activist'
     ]
   },
   {
     id: 8,
     username: '@LindaCarrollHamilton',
-    name: 'Линда Хэмилтон',
-    category: 'Кино',
-    statusLine: 'Сара Коннор — икона силы и выживания',
-    narrative: 'Когда в 1984 году на экраны вышел «Терминатор», мир увидел новый тип героини. Линда Хэмилтон создала образ Сары Коннор — женщины, которая превратилась из обычной официантки в непобедимую воительницу, защитницу будущего человечества. Её трансформация во втором фильме стала эталоном физической и психологической подготовки актрисы к роли. Хэмилтон не просто сыграла персонажа — она создала культурный феномен, переопределивший место женщин в экшн-кино.',
+    name: 'Linda Hamilton',
+    category: 'Cinema',
+    statusLine: 'Sarah Connor — icon of strength and survival',
+    narrative: 'When "The Terminator" hit screens in 1984, the world saw a new type of heroine. Linda Hamilton created the image of Sarah Connor — a woman who transformed from an ordinary waitress into an invincible warrior, defender of humanity's future. Her transformation in the second film became the standard for an actress's physical and psychological preparation for a role. Hamilton didn't just play a character — she created a cultural phenomenon that redefined the place of women in action cinema.',
     image: 'https://cdn.poehali.dev/files/S600xU_2x (1).jpeg',
     wikipedia: 'https://en.wikipedia.org/wiki/Linda_Hamilton',
     themeColor: '0 0% 5%',
     keyLegacy: [
-      'Создательница культового образа Сары Коннор',
-      'Звезда франшизы «Терминатор» (1984–2019)',
-      'Революция женских ролей в экшн-кино',
-      'Эталон физической трансформации актрисы'
+      'Creator of iconic Sarah Connor character',
+      'Star of "Terminator" franchise (1984–2019)',
+      'Revolutionized female roles in action cinema',
+      'Standard of actress physical transformation'
     ]
   },
 ];
 
-const categories = ['Все', 'Спорт', 'Кино', 'Наука', 'Искусство'];
+const categories = ['All', 'Sports', 'Cinema', 'Science', 'Art'];
 
 export default function Index() {
   const [selectedCategory, setSelectedCategory] = useState('Все');
@@ -166,7 +166,7 @@ export default function Index() {
   const [activeTheme, setActiveTheme] = useState('220 18% 8%');
   const cardRefs = useRef<Map<number, HTMLDivElement>>(new Map());
 
-  const filteredUsernames = selectedCategory === 'Все' 
+  const filteredUsernames = selectedCategory === 'All' 
     ? usernames 
     : usernames.filter(u => u.category === selectedCategory);
 
@@ -233,11 +233,11 @@ export default function Index() {
               ICONS ARCHIVE
             </h1>
             <p className="text-2xl md:text-3xl text-primary font-light tracking-wide">
-              Владение историей
+              Own the History
             </p>
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-              Эксклюзивная коллекция Telegram-аккаунтов легендарных личностей, 
-              чьи имена вписаны в историю золотыми буквами
+              Exclusive collection of Telegram accounts of legendary figures 
+              whose names are written in history with golden letters
             </p>
           </div>
         </div>
@@ -353,7 +353,7 @@ export default function Index() {
                     {/* Key Legacy */}
                     <div className="space-y-3 pt-4 border-t border-border">
                       <h4 className="text-xs uppercase tracking-widest text-primary font-semibold">
-                        Ключевое наследие
+                        Key Legacy
                       </h4>
                       <ul className="space-y-2">
                         {user.keyLegacy.map((item, i) => (
@@ -413,11 +413,11 @@ export default function Index() {
           <div className="max-w-3xl mx-auto text-center space-y-8">
             <div className="space-y-4">
               <h2 className="text-4xl md:text-5xl font-bold tracking-tight">
-                Для серьёзных коллекционеров
+                For Serious Collectors
               </h2>
               <p className="text-xl text-muted-foreground leading-relaxed">
-                Хотите приобрести юзернейм из коллекции или обсудить владение всем архивом? 
-                Мы открыты для предложений от взыскательных покупателей.
+                Want to acquire a username from the collection or discuss owning the entire archive? 
+                We are open to offers from discerning buyers.
               </p>
             </div>
             
@@ -428,13 +428,13 @@ export default function Index() {
                 onClick={() => window.open('https://t.me/Adkitten', '_blank')}
               >
                 <Icon name="Send" size={20} />
-                Обсудить приобретение
+                Discuss Acquisition
               </Button>
             </div>
 
             <p className="text-sm text-muted-foreground pt-8">
-              Каждый юзернейм — это уникальный цифровой актив, 
-              история которого принадлежит владельцу
+              Each username is a unique digital asset, 
+              whose story belongs to its owner
             </p>
           </div>
         </div>
