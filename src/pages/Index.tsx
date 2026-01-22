@@ -141,6 +141,23 @@ const usernames: Username[] = [
   },
   {
     id: 8,
+    username: '@vivziepop',
+    name: 'Vivienne Medrano',
+    category: 'Animation',
+    statusLine: 'Creator of hellish universes',
+    narrative: "VivziePop is a phenomenon of independent animation. From small YouTube videos to full-scale series 'Hazbin Hotel' and 'Helluva Boss' — her path is proof that you can build an empire without major studios. Her work combines dark humor, vibrant visuals and deep characters that have won the hearts of millions. The @vivziepop username is a symbol of creative independence and the power of the online community.",
+    image: 'https://cdn.poehali.dev/projects/577b69ef-cbe8-40c5-96ae-e907b1266064/files/41d7e93d-cb87-45e8-8b6b-2b1777099e5f.jpg',
+    wikipedia: 'https://en.wikipedia.org/wiki/Vivienne_Medrano',
+    themeColor: '350 70% 15%',
+    keyLegacy: [
+      'Creator of "Hazbin Hotel" and "Helluva Boss"',
+      'Pioneer of independent animation on YouTube',
+      'Built multimedia franchise without studio backing',
+      'Millions of fans worldwide'
+    ]
+  },
+  {
+    id: 9,
     username: '@LindaCarrollHamilton',
     name: 'Linda Hamilton',
     category: 'Cinema',
